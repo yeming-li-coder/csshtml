@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My AI Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- 左侧边栏 -->
+      <aside class="sidebar">History</aside>
+
+      <!-- 右侧主区域 -->
+      <main class="chat-area">
+        <div class="messages">
+          <!-- AI 消息行 -->
+          <div class="message-row ai-row">
+            <div class="avatar ai-avatar">🤖</div>
+            <div class="bubble ai-bubble">
+              你好！我是你的 LobeChat 助手。我可以帮你写代码、读文档。
+            </div>
+          </div>
+
+          <!-- 用户消息行 -->
+          <div class="message-row user-row">
+            <div class="avatar user-avatar">👨‍💻</div>
+            <div class="bubble user-bubble">
+              请帮我解释一下 margin collapse 是什么？<br>
+            </div>
+          </div>
+        </div>
+        <footer class="input-area">
+          <input class="chat-input" type="text" placeholder="Type your message..." />
+          <button class="send-btn">Send</button>
+          <button class="abort-btn" disabled="true">Abort</button>
+        </footer>
+      </main>
+
+      <aside class="right-sidebar">Setting</aside>
+    </div>
+    <script type="module"src="script.js"></script>
+  </body>
+</html>
